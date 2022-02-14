@@ -1,0 +1,84 @@
+:root {
+  --border-primary: 1px solid var(--neutral-400);
+  --border-dark: 1px solid var(--neutral-600);
+  --border-radius: 10px;
+  --margin-feed: 10px;
+  --font-primary: var(--neutral-800);
+  --font-primary-2: var(--neutral-500);
+  --font-dark: var(--neutral-200);
+  --font-dark-2: var(--neutral-400);
+  --background-color-primary: var(--neutral-50);
+  --background-color-dark: var(--neutral-800);
+  --breaker-color-primary: var(--neutral-200);
+  --breaker-color-dark: var(--neutral-700);
+
+  min-width: 360px;
+
+  /* Colors */
+
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+
+  --orange-high: #f97316;
+  --blue-low: #57a0ee;
+  --pop-color: #38bdf8;
+}
+
+body {
+  color: var(--neutral-800);
+  font-weight: 500;
+  /* min-width: 280px; */
+}
+
+input {
+  all: unset;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.daily-icon-pop {
+  position: relative;
+  padding-right: 20px;
+}
+
+.units {
+}
+
+.loader {
+  align-items: center;
+  margin-top: 150px;
+}
+
+.wind-icon {
+  height: 64px;
+  width: 64px;
+}
+
+/* Navbar */
+
+/* Weather Feed */
+
+.weather-feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-feed-1 {
+  display: flex;
+}
+
+/* Current Weather Main */
+
+/* Daily Weather */
+
+/* Hourly Weather */
