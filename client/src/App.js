@@ -34,6 +34,25 @@ const reducer = (state, action) => {
       console.log(action.payload.data);
       const { data, location } = action.payload.data;
       const { lat, lon } = data;
+      // if (state.recentlySearched.length) {
+      //   console.log("passed");
+      if (
+        state.recentlySearched.find(
+          (item) => item.lat === lat && item.lon === lon
+        )
+      ) {
+        return {
+          ...state,
+          loading: false,
+          error: false,
+          data: data,
+          location: location,
+          lat: lat,
+          lon: lon,
+          searchSuggestions: "",
+          details: 0,
+        };
+      }
 
       return {
         ...state,
